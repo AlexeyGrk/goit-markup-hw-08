@@ -13,14 +13,25 @@
   </head>
   <body class="page">
     <!-- Шапка сайта -->
-    <header class="header-page">
-      <div class="container">
+    <header class="header-page container">
+      <a href="./index.html" class="logo">
+        <svg class="logo-svg" width="153px" height="31px">
+          <use href="./images/sprite.svg#icon-WebStudio"></use>
+        </svg>
+      </a>
+      <button
+        type="button"
+        class="header-menu-button"
+        aria-expanded="false"
+        aria-controls="header-menu-wrapper"
+      >
+        <svg width="40px" height="40px">
+          <use class="icon-burger" href="./images/sprite.svg#icon-burger"></use>
+          <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="header-menu-wrapper">
         <nav class="main-nav">
-          <a href="./index.html" class="logo">
-            <svg class="logo-svg" width="153px" height="31px">
-              <use href="./images/sprite.svg#icon-WebStudio"></use>
-            </svg>
-          </a>
           <ul class="main-nav-list list">
             <li class="main-nav-item">
               <a class="main-nav-item-link active-page link" href="./index.html"
@@ -67,7 +78,7 @@
     <!-- Hero -->
     <main>
       <!-- Представление -->
-      <section class="hero">
+      <!-- <section class="hero container">
         <div class="container">
           <h1 class="hero-title">
             Эффективные решения <br />
@@ -77,9 +88,9 @@
             <button data-modal-open class="button-main">Заказать услугу</button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Преимущества -->
-      <section class="features">
+      <!-- <section class="features">
         <div class="container">
           <h2 hidden>Ложный заголовок</h2>
           <ul class="features-list list">
@@ -135,9 +146,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Чем мы занимаемся -->
-      <section class="our-interests">
+      <!-- <section class="our-interests">
         <div class="container">
           <h2 class="our-interests-title">Чем мы занимаемся</h2>
           <ul class="our-interests-list list">
@@ -167,9 +178,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Наша команда -->
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
@@ -355,9 +366,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Постоянные клиенты -->
-      <section class="clients">
+      <!-- <section class="clients">
         <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -407,12 +418,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- Подвал сайта -->
     <footer>
       <!-- логотип футер -->
-      <div class="main-footer-container">
+      <!-- <div class="main-footer-container">
         <div class="footer-container container">
           <div class="logo-container">
             <a class="logo-footer" href="./index.html">
@@ -421,7 +432,6 @@
               </svg>
             </a>
             <address class="address">
-              <!-- Контактная информация -->
               <ul class="address-list list">
                 <li class="address-item">
                   <a
@@ -512,9 +522,9 @@
             </form>
           </div>
         </div>
-      </div>
+      </div> -->
     </footer>
-    <div data-modal class="backdrop is-hidden">
+    <!-- <div data-modal class="backdrop is-hidden">
       <form class="modal-form">
         <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
         <button type="button" data-modal-close class="modal-close-button">
@@ -561,7 +571,7 @@
         <button class="modal-form-button-submit" type="submit">Отправить</button>
        
       </form>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
