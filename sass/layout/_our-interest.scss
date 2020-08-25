@@ -1,0 +1,46 @@
+/* Our-itnerest  */
+.our-interests {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-interests-list-text {
+  margin: 0;
+}
+.our-interests-title {
+  margin-bottom: 50px;
+}
+.our-interests-list {
+  display: flex;
+}
+.our-interests-list-item {
+  position: relative;
+}
+.our-interests-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.our-interests-title,
+.team-title,
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $main-color-title;
+}
+.our-interests-list-text {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
