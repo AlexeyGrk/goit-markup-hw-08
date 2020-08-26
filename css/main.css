@@ -79,9 +79,9 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .container {
-    width: 1200px;
+    width: 1600px;
     padding-left: 215px;
     padding-right: 215px;
   }
@@ -466,12 +466,6 @@ img {
   }
   .adress-item-link-icon {
     margin-right: 8px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header-page {
-    align-content: flex-start;
   }
 }
 
