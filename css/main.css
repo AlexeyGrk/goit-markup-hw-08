@@ -293,22 +293,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #ececec;
-}
-
-.header-menu-wrapper {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 480px;
-  height: 453px;
-  top: 100%;
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .main-nav {
@@ -317,19 +301,11 @@ img {
   align-items: center;
 }
 
-.main-nav-item {
-  margin-bottom: 40px;
-}
-
 .main-nav-item-link {
   display: inline-block;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.17;
   letter-spacing: 0.02em;
   text-align: center;
-  width: 66px;
-  height: 33px;
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -357,8 +333,6 @@ img {
 .adress-item-link {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
 }
@@ -367,6 +341,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.adress-item {
+  margin-bottom: 16px;
 }
 
 .adress-item-link {
@@ -383,11 +361,71 @@ img {
   fill: currentColor;
 }
 
-.header-menu-button {
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-  cursor: pointer;
+@media screen and (max-width: 767px) {
+  .header-page {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ececec;
+  }
+  .header-menu-wrapper {
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    width: 480px;
+    height: 453px;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .header-menu-wrapper.is-open {
+    display: block;
+  }
+  .main-nav-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .main-nav-item-link {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+  .header-menu-button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  .header-menu-button:hover {
+    fill: #2196f3;
+  }
+  .header-menu-button.is-open .icon-burger {
+    display: none;
+  }
+  .header-menu-button.is-open .icon-close {
+    display: block;
+  }
+  .icon-close {
+    display: none;
+  }
+  .main-nav-item-link {
+    font-size: 18px;
+    line-height: 1.17;
+    width: 66px;
+    height: 33px;
+  }
+  .adress-item-link {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+  .adress-utils {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu-button {
+    display: none;
+  }
 }
 
 .button-main,

@@ -24,13 +24,14 @@
         class="header-menu-button"
         aria-expanded="false"
         aria-controls="header-menu-wrapper"
+        data-menu-button
       >
         <svg width="40px" height="40px">
           <use class="icon-burger" href="./images/sprite.svg#icon-burger"></use>
           <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
-      <div class="header-menu-wrapper">
+      <div class="header-menu-wrapper" id="header-menu-wrapper" data-menu>
         <nav class="main-nav">
           <ul class="main-nav-list list">
             <li class="main-nav-item">
@@ -78,7 +79,7 @@
     <!-- Hero -->
     <main>
       <!-- Представление -->
-      <!-- <section class="hero container">
+      <section class="hero container">
         <div class="container">
           <h1 class="hero-title">
             Эффективные решения <br />
@@ -88,7 +89,7 @@
             <button data-modal-open class="button-main">Заказать услугу</button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- Преимущества -->
       <!-- <section class="features">
         <div class="container">
@@ -572,6 +573,7 @@
        
       </form>
     </div> -->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
