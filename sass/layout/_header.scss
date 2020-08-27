@@ -140,6 +140,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .main-nav-item:not(:last-child) {
+    margin-right: 50px;
+  }
   .main-nav-item-link {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -156,6 +159,9 @@
   .main-nav-list {
     display: flex;
   }
+  .adress-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 
   // .main-nav-item-link {
   //   padding-top: 32px;
@@ -164,29 +170,57 @@
   //   line-height: 1.14;
   // }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-nav-list {
+    margin-right: 81px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .header-page {
     padding-right: 15px;
     padding-left: 15px;
     justify-content: space-between;
   }
-  .main-nav-list {
-    margin-right: 81px;
-  }
-  .main-nav-item:not(:last-child) {
-    margin-right: 50px;
-  }
 
   .adress-item-link {
     font-size: 12px;
     line-height: 1.666;
   }
-  .adress-item:not(:last-child) {
-    margin-bottom: 10px;
-  }
+
   .adress-item-link-icon {
     margin-right: 8px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .header-page {
+    display: inline-flex;
+    padding-left: 215px;
+    padding-right: 215px;
+  }
+  .header-menu-wrapper {
+    margin-left: 92px;
+    justify-content: center;
+    align-content: center;
+  }
+  .adress-list {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .adress-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .adress-utils {
+    margin-left: 280px;
+  }
+  .adress-item-link-icon {
+    margin-right: 10px;
+  }
+  .adress-item-link {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: inherit;
+    font-size: 14px;
+    line-height: 1.14px;
+  }
 }
