@@ -561,45 +561,8 @@ img {
 
 /* Our Features */
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.features-list {
-  display: flex;
-  align-items: center;
-}
-
-.features-list-item:not(:last-child) {
-  padding-right: 30px;
-}
-
-/* .features-list-item::before {
-  content: "";
-  display: flex;
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  background-image: url(../images/Vector1.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
-} */
-.features-item-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.features-img {
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .features-list-item-title {
@@ -619,6 +582,77 @@ img {
   margin: 0px;
 }
 
+.features-img {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .features-item-icon {
+    width: 450px;
+    height: 120px;
+  }
+  .features-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .features-list-item-title {
+    display: flex;
+    justify-content: center;
+  }
+  .features-list-item-text {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .features-list {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-item-icon {
+    width: 354px;
+    height: 120px;
+  }
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features-list-item-text {
+    display: block;
+  }
+  .features-list-item {
+    width: 354px;
+    height: 251px;
+  }
+  .features-list-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+/* .features-list-item::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-image: url(../images/Vector1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+} */
 /* Our-itnerest  */
 .our-interests {
   padding-top: 94px;
