@@ -602,6 +602,9 @@ img {
     width: 450px;
     height: 120px;
   }
+  .features-list-item {
+    display: inline-block;
+  }
   .features-list-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -628,16 +631,22 @@ img {
   .features-list-item-text {
     display: block;
   }
-}
-
-@media screen and (max-width: 1199px) {
   .features-list-item:nth-child(odd) {
     margin-right: 30px;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-item-icon {
-    width: 354px;
     height: 120px;
   }
+  .features-list-item {
+    width: 354px;
+    height: 251px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .features-list {
     flex-wrap: wrap;
   }
@@ -679,55 +688,56 @@ img {
 } */
 /* Our-itnerest  */
 .our-interests {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: none;
 }
 
-.our-interests-list-text {
-  margin: 0;
-}
-
-.our-interests-title {
-  margin-bottom: 50px;
-}
-
-.our-interests-list {
-  display: flex;
-}
-
-.our-interests-list-item {
-  position: relative;
-}
-
-.our-interests-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.our-interests-title,
-.team-title,
-.clients-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: #212121;
-}
-
-.our-interests-list-text {
-  position: absolute;
-  bottom: 0;
-  width: 370px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: rgba(47, 48, 58, 0.8);
+@media screen and (min-width: 1200px) {
+  .our-interests {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .our-interests-list-text {
+    margin: 0;
+  }
+  .our-interests-title {
+    margin-bottom: 50px;
+  }
+  .our-interests-list {
+    display: flex;
+    justify-content: center;
+  }
+  .our-interests-list-item {
+    position: relative;
+  }
+  .our-interests-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .our-interests-title,
+  .team-title,
+  .clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: #212121;
+  }
+  .our-interests-list-text {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
 
 /* our team block */
@@ -818,28 +828,45 @@ img {
 
 /* Clients-block */
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    margin-bottom: 50px;
+  }
 }
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .clients-list-item:not(:nth-child(n + 5)) {
+    margin-bottom: 30px;
+  }
+  .clients-list-item:nth-child(odd) {
+    margin-right: 30px;
+  }
 }
 
 .clients-list-item-link {
   display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
-  height: 90px;
   justify-content: center;
   align-items: center;
   color: #afb1b8;
@@ -849,6 +876,27 @@ img {
 .clients-list-item-link:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients-list-item-link {
+    width: 210px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list-item-link {
+    width: 226px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list-item-link {
+    width: 170px;
+    height: 90px;
+  }
 }
 
 .clients-list-item-link-icon-1 {

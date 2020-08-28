@@ -36,6 +36,9 @@
     width: 450px;
     height: 120px;
   }
+  .features-list-item {
+    display: inline-block;
+  }
   .features-list-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -60,20 +63,26 @@
   .features-list-item-text {
     display: block;
   }
-}
-@media screen and (max-width: 1199px) {
   .features-list-item:nth-child(odd) {
     margin-right: 30px;
   }
-
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-item-icon {
-    width: 354px;
     height: 120px;
   }
+  .features-list-item {
+    width: 354px;
+    height: 251px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .features-list {
     flex-wrap: wrap;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .features {
     padding-top: 94px;
