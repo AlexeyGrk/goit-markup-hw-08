@@ -1,6 +1,8 @@
 /* footer */
 .main-footer-container {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   display: block;
@@ -12,13 +14,17 @@
 }
 .footer-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .address {
+  align-items: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  margin-right: 69px;
+  // margin-right: 69px;
 }
 .address-item-link {
   color: rgba(255, 255, 255, 0.6);
@@ -36,11 +42,9 @@
 }
 .social-container-list {
   display: flex;
-  justify-content: space-around;
+  // justify-content: space-around;
 }
 .logo-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .footer-logo {
   margin-bottom: 20px;
@@ -49,8 +53,11 @@
   margin-bottom: 9px;
 }
 .social-container-text {
-  padding-top: 65px;
+  display: flex;
+  justify-content: center;
+  // padding-top: 65px;
   margin-bottom: 20px;
+  margin-top: 60px;
 }
 .social-container-list-item-link {
   display: flex;

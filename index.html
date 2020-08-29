@@ -79,17 +79,16 @@
     <!-- Hero -->
     <main>
       <!-- Представление -->
-      <!-- <section class="hero container">
-        <div class="container">
-          <h1 class="hero-title">
-            Эффективные решения <br />
-            для вашего бизнеса
+      <section class="hero container">
+         <h1 class="hero-title">
+          Эффективные решения <br />
+          для вашего бизнеса
           </h1>
           <div class="hero-button-container">
             <button data-modal-open class="button-main">Заказать услугу</button>
           </div>
-        </div>
-      </section> -->
+
+      </section>
       <!-- Преимущества -->
       <section class="features container">
         <h2 hidden>Ложный заголовок</h2>
@@ -177,16 +176,16 @@
         </ul>
       </section>
       <!-- Наша команда -->
-      <!-- <section class="team">
-        <div class="container">
+      <section class="team container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./images/Kucherenko.png"
-                alt="Николай Кучеренко фото"
-              />
+              <picture>
+                <source srcset="./images/team/team-1.jpg x1,./images/team/team-1@2x.jpg x2 " @media="(max-width:867px)">
+                <source srcset="./images/team-tablet/tablet-team-1.jpg x1, ./images/team/tablet-team-1@2x.jpg x2 " @media="(min-width:786px)">
+                <img class="team-list-img" src="images/team/team-1.jpg" alt="Николай Кучеренко фото" />
+              </picture>
+             
               <h3 class="team-list-item-title">Николай Кучеренко</h3>
               <p class="team-list-item-text">Product Designer</p>
               <ul class="social-list list">
@@ -227,11 +226,15 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./images/Ivanova.png"
-                alt="Ольга Иванова фото"
-              />
+              <picture>
+                <source srcset="./images/team/team-2.jpg x1, ./images/team/team-2@2x.jpg x2" @media screen and (min-width:480px)>
+                <img
+                  class="team-list-img"
+                  src="./images/team/team-2.jpg"
+                  alt="Ольга Иванова фото"
+                />
+                
+              </picture>
               <h3 class="team-list-item-title">Ольга Иванова</h3>
               <p class="team-list-item-text">Frontend Developer</p>
               <ul class="social-list list">
@@ -272,11 +275,15 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./images/Shevchenko.png"
-                alt="Андрей Шевченко фото"
-              />
+              <picture>
+                <source srcset="./images/team/team-3.jpg x1, ./images/team/team-3@2x.jpg x2" @media screen and (min-width:480px)>
+                <img
+                  class="team-list-img"
+                  src="./images/team/team-3.jpg"
+                  alt="Андрей Шевченко фото"
+                />
+
+              </picture>
               <h3 class="team-list-item-title">Андрей Шевченко</h3>
               <p class="team-list-item-text">Marketing</p>
               <ul class="social-list list">
@@ -317,11 +324,15 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./images/Nikolaev.png"
-                alt="Иван Николаев фото"
-              />
+              <picture>
+                <source srcset="./images/team/team-4.jpg x1, ./images/team/team-4@2x.jpg x2" @media screen and (min-width:480px)>
+                <img
+                  class="team-list-img"
+                  src="./images/team/team-4.jpg"
+                  alt="Иван Николаев фото"
+                />
+
+              </picture>
               <h3 class="team-list-item-title">Иван Николаев</h3>
               <p class="team-list-item-text">UI Designer</p>
               <ul class="social-list list">
@@ -362,8 +373,7 @@
               </ul>
             </li>
           </ul>
-        </div>
-      </section> -->
+      </section>
       <!-- Постоянные клиенты -->
       <section class="clients container">
           <h2 class="clients-title">Постоянные клиенты</h2>
@@ -418,7 +428,7 @@
     <!-- Подвал сайта -->
     <footer>
       <!-- логотип футер -->
-      <!-- <div class="main-footer-container">
+      <div class="main-footer-container">
         <div class="footer-container container">
           <div class="logo-container">
             <a class="logo-footer" href="./index.html">
@@ -427,28 +437,19 @@
               </svg>
             </a>
             <address class="address">
-              <ul class="address-list list">
-                <li class="address-item">
-                  <a
-                    class="address-item-link maps link"
-                    target="_blank"
-                    href="https://goo.gl/maps/2NKbzkvfWFXUUTUt6"
-                    >г. Киев, пр-т Леси Украинки, 26</a
-                  >
-                </li>
-                <li class="address-item">
-                  <a
-                    class="address-item-link link"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li class="address-item">
-                  <a class="address-item-link link" href="tel:+380961111111"
-                    >+38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
+                <ul class="address-list list">
+                  <li class="address-item">
+                    <a class="address-item-link maps link" target="_blank" href="https://goo.gl/maps/2NKbzkvfWFXUUTUt6">г. Киев, пр-т
+                      Леси Украинки, 26</a>
+                  </li>
+                  <li class="address-item">
+                    <a class="address-item-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+                  <li class="address-item">
+                    <a class="address-item-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                </ul>
+              
             </address>
           </div>
           <div class="social-container">
@@ -502,7 +503,7 @@
           </div>
           <div class="footer-continer-form">
             <b class="form-invite">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
-            <form>
+            <form class="footer-form">
               <div class="footer-email-form">
               <input class="footer-form-text" type="email" name="user-email" id="footer-input-text" placeholder=" ">
               <label class="footer-input-text-label" for="footer-input-text">E-mail*</label>
@@ -517,7 +518,7 @@
             </form>
           </div>
         </div>
-      </div> -->
+      </div>
     </footer>
     <!-- <div data-modal class="backdrop is-hidden">
       <form class="modal-form">
