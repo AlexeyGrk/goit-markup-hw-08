@@ -159,9 +159,6 @@
   .main-nav-list {
     display: flex;
   }
-  .adress-item:not(:last-child) {
-    margin-bottom: 10px;
-  }
 
   // .main-nav-item-link {
   //   padding-top: 32px;
@@ -173,6 +170,9 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-nav-list {
     margin-right: 81px;
+  }
+  .adress-item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -193,9 +193,9 @@
 }
 @media screen and (min-width: 1200px) {
   .header-page {
-    display: inline-flex;
-    padding-left: 215px;
-    padding-right: 215px;
+    // display: inline-flex;
+    // padding-left: 215px;
+    // padding-right: 215px;
   }
   .header-menu-wrapper {
     margin-left: 92px;
@@ -203,7 +203,7 @@
     align-content: center;
   }
   .adress-list {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -212,6 +212,7 @@
   }
   .adress-utils {
     margin-left: 280px;
+    width: 353px;
   }
   .adress-item-link-icon {
     margin-right: 10px;
