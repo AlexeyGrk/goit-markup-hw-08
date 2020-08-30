@@ -543,9 +543,8 @@ img {
 .hero {
   width: 480px;
   height: 400px;
-  background-image: url("../../images/hero-var/hero-mobile.jpg");
+  background-image: url("../../images/hero-mobile.jpg");
   background-size: 480px 320px;
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
