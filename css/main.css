@@ -1108,7 +1108,6 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
-  display: block;
 }
 
 .social-container-list {
@@ -1163,13 +1162,20 @@ img {
   background-color: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-social-adress-container {
+    display: flex;
+    align-items: center;
+  }
+  .logo-container {
+    margin-right: 165px;
+  }
+}
+
 /* Form */
 .footer-continer-form {
-  width: 570px;
-  height: 90px;
-  padding-top: 65px;
-  padding-bottom: 65px;
-  margin-left: 93px;
+  max-width: 100%;
+  margin-top: 60px;
 }
 
 .form-invite {
@@ -1187,7 +1193,7 @@ img {
 
 .footer-form-text {
   display: inline-block;
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1201,10 +1207,10 @@ img {
 }
 
 .button-footer-form {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 5px;
+  margin: 0 auto;
 }
 
 .footer-email-form {
@@ -1216,6 +1222,7 @@ img {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 
 .footer-form-text:focus + .footer-input-text-label,
