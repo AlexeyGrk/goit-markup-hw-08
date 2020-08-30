@@ -97,3 +97,20 @@
     margin-right: 165px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    flex-direction: row;
+  }
+  .social-container-text {
+    margin-top: 5px;
+  }
+  .footer-form {
+    display: flex;
+  }
+  .social-container {
+    margin-right: 93px;
+  }
+  .footer-email-form {
+    margin-right: 20px;
+  }
+}
