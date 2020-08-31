@@ -23,6 +23,7 @@
 .footer-form-text {
   display: inline-block;
   width: 450px;
+  max-width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -43,6 +44,8 @@
 .footer-email-form {
   display: inline-block;
   position: relative;
+  width: 450px;
+  max-width: 100%;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
