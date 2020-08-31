@@ -1248,7 +1248,6 @@ img {
 @media screen and (min-width: 768px) {
   .footer-social-adress-container {
     display: flex;
-    align-items: center;
   }
   .logo-container {
     margin-right: 165px;
@@ -1285,6 +1284,13 @@ img {
 .footer-continer-form {
   max-width: 100%;
   margin-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-continer-form {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .form-invite {

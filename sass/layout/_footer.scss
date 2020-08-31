@@ -58,6 +58,9 @@
   // padding-top: 65px;
   margin-bottom: 20px;
   margin-top: 60px;
+  // @media screen and (min-width: 1200px) {
+  //   margin-top: 0p;
+  // }
 }
 .social-container-list-item-link {
   display: flex;
@@ -93,7 +96,7 @@
 @media screen and (min-width: 768px) {
   .footer-social-adress-container {
     display: flex;
-    align-items: center;
+    // align-items: center;
   }
   .logo-container {
     margin-right: 165px;
