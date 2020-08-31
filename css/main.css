@@ -159,9 +159,9 @@ img {
 
 .modal-form-input-label {
   position: absolute;
-  top: -40%;
+  top: -60%;
   left: 0;
-  transform: translate(40%, 40%);
+  transform: translateY(60%);
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -658,6 +658,7 @@ img {
 }
 
 .features-img {
+  max-width: 100%;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -675,6 +676,7 @@ img {
 @media screen and (max-width: 767px) {
   .features-item-icon {
     width: 450px;
+    max-width: 100%;
     height: 120px;
   }
   .features-list-item {
@@ -717,6 +719,7 @@ img {
   }
   .features-list-item {
     width: 354px;
+    max-width: 100%;
     height: 251px;
   }
 }
@@ -734,6 +737,7 @@ img {
   }
   .features-list-item {
     width: 270px;
+    max-width: 100%;
     height: 251px;
   }
   .features-list {
@@ -746,6 +750,7 @@ img {
   }
   .features-item-icon {
     width: 270px;
+    max-width: 100%;
     height: 120px;
   }
 }
@@ -830,7 +835,9 @@ img {
 
 .team-list-item {
   width: 450px;
+  max-width: 100%;
   height: 622px;
+  margin-bottom: 30px;
   background-color: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;

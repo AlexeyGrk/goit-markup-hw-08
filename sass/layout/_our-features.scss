@@ -19,6 +19,7 @@
   margin: 0px;
 }
 .features-img {
+  max-width: 100%;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -34,6 +35,7 @@
 @media screen and (max-width: 767px) {
   .features-item-icon {
     width: 450px;
+    max-width: 100%;
     height: 120px;
   }
   .features-list-item {
@@ -73,6 +75,7 @@
   }
   .features-list-item {
     width: 354px;
+    max-width: 100%;
     height: 251px;
   }
 }
@@ -90,6 +93,7 @@
   }
   .features-list-item {
     width: 270px;
+    max-width: 100%;
     height: 251px;
   }
   .features-list {
@@ -102,6 +106,7 @@
   }
   .features-item-icon {
     width: 270px;
+    max-width: 100%;
     height: 120px;
   }
 }
