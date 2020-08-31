@@ -2,14 +2,19 @@
 .filter {
   padding-top: 93px;
   margin-bottom: 50px;
+  @media screen and(min-width:320px) and (max-width: 767px) {
+    padding-top: 60px;
+  }
 }
 .filter-list {
   display: flex;
   justify-content: center;
+  @media screen and(min-width:320px) and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
-.filter-list-item:not(:last-child) {
-  margin-right: 8px;
-}
+
 .filter-list-btn {
   background-color: #f5f4fa;
   height: 38px;
@@ -38,6 +43,12 @@
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: $main-color-title;
+  @media screen and(min-width:320px) and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
 }
 /* .filter-list-item:hover,
 .filter-list-item:focus {

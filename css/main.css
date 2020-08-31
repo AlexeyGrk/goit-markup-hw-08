@@ -1361,13 +1361,22 @@ img {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .filter {
+    padding-top: 60px;
+  }
+}
+
 .filter-list {
   display: flex;
   justify-content: center;
 }
 
-.filter-list-item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .filter-list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 .filter-list-btn {
@@ -1396,6 +1405,16 @@ img {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .filter-list-item {
+    margin-bottom: 15px;
+  }
+}
+
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 /* .filter-list-item:hover,
@@ -1431,7 +1450,8 @@ img {
 }
 
 .portfolio-list-back {
-  width: 370px;
+  width: 450px;
+  max-width: 100%;
   height: 294px;
   position: relative;
   overflow: hidden;
@@ -1498,12 +1518,36 @@ img {
 }
 
 .portfolio-list-item {
-  margin-right: 30px;
+  display: inline-block;
+  width: 450px;
+  max-width: 100%;
+  height: 404px;
   margin-bottom: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list-item {
+    width: 354px;
+    max-width: 100%;
+    height: 440px;
+    flex-wrap: wrap;
+  }
+  .portfolio-list-item:nth-child(odd) {
+    margin-right: 25px;
+  }
+  .portfolio-list-item:nth-child(9) {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list-item {
+    margin-right: 30px;
+  }
 }
 
 .portfolio-list-item .portfolio-list-item-app-text:hover {
@@ -1517,8 +1561,10 @@ img {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-list :nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .portfolio-list :nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .portfolio-list :nth-last-child(-n + 3) {
@@ -1526,7 +1572,7 @@ img {
 }
 
 .portfolio-list-img {
-  margin-bottom: 20px;
+  width: 100%;
 }
 
 .portfolio-container {
