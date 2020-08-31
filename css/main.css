@@ -389,6 +389,7 @@ img {
   }
   .header-menu-wrapper.is-open {
     display: block;
+    z-index: 100;
   }
   .main-nav-item:not(:last-child) {
     margin-bottom: 40px;
@@ -1539,9 +1540,6 @@ img {
   .portfolio-list-item:nth-child(odd) {
     margin-right: 25px;
   }
-  .portfolio-list-item:nth-child(9) {
-    margin-top: 30px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1569,6 +1567,12 @@ img {
 
 .portfolio-list :nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-list :nth-last-child(-n + 3) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-list-img {

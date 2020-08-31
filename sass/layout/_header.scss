@@ -89,6 +89,7 @@
     border-top: 1px solid #ececec;
     &.is-open {
       display: block;
+      z-index: 100;
     }
   }
   .main-nav-item:not(:last-child) {
